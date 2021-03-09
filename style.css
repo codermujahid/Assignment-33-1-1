@@ -1,0 +1,192 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+/* primary-meanu */
+
+.main-header .container-fluid,
+ .slider-section .container-fluid{
+	max-width: 1480px;
+}
+body .a-btn {
+	background-color: #e73a3e !important;
+	border:#e73a3e;
+	padding: 9px 36px;
+	font-size: 15px;
+
+	position: relative;
+
+	/* display: block ruby; */
+    z-index: 1;
+ 
+}
+body .a-btn::after{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 100%;
+background-color: #111;
+color: #111;
+border-radius: 5px;
+z-index: -1;
+transition: .4s;
+}
+body .a-btn:hover::after{
+    width:100%;
+}
+.header-button a {
+	width: 134px;
+}
+ul.primary-meanu{}
+ul.primary-meanu li{
+    position: relative;
+}
+ul.primary-meanu li ul {
+	position: absolute;
+	width: 250px;
+	top: 160%;
+	left: 0;
+	background: rgb(255, 255, 255);
+	padding-left: 0;
+	padding: 10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+ul.primary-meanu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+}
+ul.primary-meanu li ul li{
+    list-style: none;
+}
+ul.primary-meanu li ul li a{}
+ul.primary-meanu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+}
+ul.primary-meanu li a:hover{}
+ 
+
+.primary-meanu li a i {
+	font-size: 12px;
+}
+.header-info {
+}
+.d-flex {
+}
+.header-search span i {
+	width: 45px;
+	font-size: 19px;
+	text-align: center;
+	margin-right: 20px;
+	border-right: 1px solid #cabfbf;
+}
+.header-call {
+	width: 210px;
+}
+ 
+
+.header-call-icon {
+	font-size: 25px;
+	color: red;
+}
+ 
+ 
+.header-call-info a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+}
+.header-call-info span{
+    color: #606060;
+    font-size: 15px;
+}
+ 
+.header-button {
+     
+}
+ 
+/* slider-section */
+
+.slider-section {
+}
+.container-fluid {
+}
+.col-lg-12 {
+}
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+}
+.btn-primary {
+}
+
+
+.header-social {
+	position: absolute;
+	bottom: 0;
+ 
+}
+.header-social ul{
+	 list-style: none;
+	 padding-left: 0;
+}
+.header-social span{
+
+}
+.slider-section{
+	background: url(./main-banner2.jpg) no-repeat top center;
+	background-size: cover;
+	/* position:  sticky; */
+}
+.slider-content {}
+.slider-content h6{
+	color: #e73a3e;
+}
+.slider-content h1 {
+	font-size: 68px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.slider-content p {
+	font-size: 18px;
+	font-weight: 400;
+	width: 615px;
+}
+.header-social i {
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px -9px;
+	color: #111;
+	position: relative;
+	margin-left: 34px;
+}
+.header-social i:hover{
+	color: #e73a3e;
+}
+.header-social::after{
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 80px;
+	height: 1px;
+	width: 25px;
+	background: #464343;
+}
